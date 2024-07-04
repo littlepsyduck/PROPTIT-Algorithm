@@ -1,1 +1,1 @@
-Contest practice algorithm for ICPC PTIT.
+Luyện tập contest Practice Algorithm for ICPC PTIT.

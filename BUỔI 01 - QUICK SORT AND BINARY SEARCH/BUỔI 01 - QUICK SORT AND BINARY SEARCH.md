@@ -2,6 +2,17 @@
 
 # QUICK SORT AND BINARY SEARCH
 
+```
+Nội dung:
+- Khái quát chung về chia để trị.
+- Nguyên lý hoạt động của Quick Sort.
+- Phần tử pivot là gì? có ảnh hưởng thế nào đến độ phức tạp của thuật toán?
+- Tại sao độ phức tạp của Quick Sort lại là O(nlog(n)) và tệ nhất là O(n^2).
+- Binary Search hoạt động? tại sao phải so sánh với phần tử chính giữa tập dữ liệu mà không phải lệnh trái hay lệnh phải?
+- Độ phức tạp của Binary Search?
+- Giải thích code 2 bài : Số bé thứ K, Help sudo trên Codeforces.
+```
+
 ## I. Khái quát chung về chia để trị
 
 ## 1. Định nghĩa

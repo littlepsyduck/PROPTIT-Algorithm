@@ -2,6 +2,13 @@
 
 # ĐỆ QUY QUAY LUI VÀ KỸ THUẬT NHÁNH CẬN
 
+```
+Nội dung:
+- Tìm hiểu về ý tưởng thuật toán đệ quy - quay lui.
+- Hiểu và vận dụng kỹ thuật nhánh cận.
+- Độ phức tạp thuật toán.
+```
+
 ## I. Đệ quy quay lui
 
 ### 1. Khái niệm về đệ quy

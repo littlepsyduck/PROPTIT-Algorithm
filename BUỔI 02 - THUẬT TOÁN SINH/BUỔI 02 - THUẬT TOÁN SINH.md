@@ -2,6 +2,17 @@
 
 # THUẬT TOÁN SINH
 
+```
+Nội dung:
+- 3 thuật toán
+  + Sinh nhị phân
+  + Sinh tổ hợp
+  + Sinh hoán vị
+- Yêu cầu chung đối với 3 thuật toán
+  + Nguyên lí hoạt động
+  + Độ phức tạp
+```
+
 ## I. Khái quát chung
 
 ### 1. Khái niệm

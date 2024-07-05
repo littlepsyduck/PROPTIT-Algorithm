@@ -4,247 +4,98 @@
 
 ```
 Nội dung:
-Cấu trúc dữ liệu là gì, sử dụng khi nào?
-Interface Iterable, Collection -> List, Set, Queue.
-Interface Map, SortedMap -> HashMap, TreeMap.
-Sử dụng một số hàm của cấu trúc dữ liệu như sort.
+- Chuẩn bị các bài tập sau trên SPOJ:
+    + https://vn.spoj.com/problems/LIQ/
+    + https://www.spoj.com/PTIT/problems/BCCAITUI/
+- Khái quát về quy hoạch động:
+    + Quy hoạch động là gì? Trạng thái là gì? Có những loại quy hoạch động nào? Khi nào cần sử dụng quy hoạch động?
+    + Nêu những bước cơ bản cần để giải quyết một bài toán quy hoạch động.
+    + Trình bày về 2 bài toán quy hoạch động kinh điển: Dãy con tăng dài nhất và Bài toán cái túi.
 ```
-## I. Cấu trúc dữ liệu
-> Thuật ngữ cấu trúc dữ liệu đề cập đến một tập hợp dữ liệu với các hoạt động và hành vi hoặc thuộc tính được xác định rõ ràng. 
-- Phân loại:
-  - Cấu trúc dữ liệu tuyến tính: Trong cấu trúc dữ liệu tuyến tính, tất cả các phần tử được sắp xếp theo thứ tự tuyến tính hoặc tuần tự. Cấu trúc dữ liệu tuyến tính là cấu trúc dữ liệu mức đơn.
-  - Cấu trúc dữ liệu phi tuyến tính: Cấu trúc dữ liệu phi tuyến tính không sắp xếp dữ liệu theo cách tuần tự như trong cấu trúc dữ liệu tuyến tính. Cấu trúc dữ liệu phi tuyến tính là cấu trúc dữ liệu đa cấp.
-![Phân loại cấu trúc dữ liệu trong Java](image.png)
-### Tại sao cần dùng cấu trúc dữ liệu
-- Khi lượng dữ liệu phát triển nhanh chóng, các ứng dụng trở nên phức tạp hơn và có thể phát sinh các vấn đề sau:
-  - Tốc độ xử lý: Do dữ liệu đang tăng lên từng ngày, nên cần phải xử lý tốc độ cao để xử lý lượng dữ liệu khổng lồ này, nhưng bộ xử lý có thể không xử lý được lượng dữ liệu nhiều đó.
-  - Tìm kiếm dữ liệu: Hãy xem xét một kho có kích thước 200 mặt hàng. Nếu ứng dụng của cần tìm kiếm một mục cụ thể, nó cần phải duyệt qua 200 mục trong mỗi lần tìm kiếm. Điều này dẫn đến làm chậm quá trình tìm kiếm.
-  - Nhiều yêu cầu cùng một lúc: Giả sử, hàng triệu người dùng đang đồng thời tìm kiếm dữ liệu trên một máy chủ web, thì có khả năng máy chủ bị lỗi.
-- Để giải quyết các vấn đề trên, chúng ta sử dụng cấu trúc dữ liệu. Cấu trúc dữ liệu lưu trữ và quản lý dữ liệu theo cách mà dữ liệu cần thiết có thể được tìm kiếm ngay lập tức.
-## II. Interface Iterable, Collection
-### 1. Interface Iterable
-- Trong Java, Iterable là một giao diện (interface) được định nghĩa trong gói `java.lang`. Nó liên quan đến việc duyệt qua các phần tử trong một tập hợp dữ liệu (collection) như mảng, danh sách liên kết, hoặc tập hợp (Set). Iterable cung cấp một cách tiếp cận trừu tượng để truy cập từng phần tử trong tập hợp, mà không cần biết chi tiết cài đặt của tập hợp đó.
-- Giao diện này định nghĩa một phương thức duy nhất là `Iterator<T> iterator()`, nơi mà các lớp triển khai phải cung cấp một trình duyệt (iterator) để lặp qua các phần tử của tập hợp. 
-- Ví dụ:
-```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        List<String> danhSach = new ArrayList<>();
-        danhSach.add("Java");
-        danhSach.add("Python");
-        danhSach.add("C++");
+## I. Khái quát về quy hoạch động
 
-        // Sử dụng Iterable và Iterator để duyệt qua danh sách liên kết
-        Iterable<String> iterable = danhSach;
-        Iterator<String> iterator = iterable.iterator();
-        while (iterator.hasNext()) {
-            String phanTu = iterator.next();
-            System.out.println(phanTu);
+- Quy hoạch động là một kỹ thuật thiết kế thuật toán theo kiểu chia bài toán lớn thành các bài toán con, sử dụng lời giải của các bài toán con để tìm lời giải cho bài toán ban đầu.
+- Khác với bài toán chia để trị, quy hoạch động, thay vì gọi đệ quy, sẽ tính trước lời giải của các bài toán con và lưu vào bộ nhớ (thường là một mảng), sau đó lấy lời giải của các bài toán con ở trong mảng đã được tính trước để giải bài toán lớn.
+- Trạng thái là một trường hợp, một bài toán con của bài toán lớn với tham số cho trước.
+- Phần lớn các bài toán quy hoạch động có thể chia thành 2 loại:
+  - Bài toán quy hoạch động tối ưu: yêu cầu chúng ta phải tìm đáp án tốt nhất từ mục tiêu của bài toán (số đồng xu ít nhất, xâu con chung dài nhất, dãy con tăng dài nhất, …).
+  - Bài toán tổ hợp: yêu cầu chúng ta tìm ra số cách khác nhau để thực hiện một việc gì đó. Sự khác biệt cơ bản của dạng bài toán này với dạng bài toán tối ưu là ở chỗ chúng ta cần tính tổng thay vì tìm số lớn nhất hoặc nhỏ nhất.
+- Quy hoạch động được sử dụng khi ta tìm được công thức liên hệ giữa kết quả bài toán có đầu vào cho trước với một (hoặc một số) bài toán con tương tự nhưng có đầu vào nhỏ hơn. Khi ta biết được một số trạng thái bắt đầu của bài toán, nói cách khác - bài toán con với những đầu vào rất nhỏ, ta có thể sử dụng QHĐ để tính ra kết quả cuối cùng.
+
+## II. Những bước cơ bản cần để giải quyết một bài toán quy hoạch động
+
+- Phân rã:
+  - Chia bài toán cần giải thành những bài toán con nhỏ hơn đến mức có thể giải trực tiếp được hay không??
+- Nếu được => Giải các bài toán con và ghi nhận lời giải:
+  - Lưu trữ lời giải của các bài toán con vào một bảng để sử dụng về sau.
+- Tổng hợp lời giải:
+  - Tổng hợp lời giải các bài toán con kích thước nhỏ hơn thành lời giải bài toán lớn hơn.
+  - Tiếp tục cho đến khi thu được lời giải của bài toán xuất phát (là bài toán con có kích thước lớn nhất).
+
+## III. Hai bài toán quy hoạch động kinh điển
+
+### Dãy con tăng dài nhất
+
+- Dùng mảng f[] để lưu độ dài dãy con tăng dài nhất. f[i] là độ dài dãy con tăng dài nhất khi xét đến phần tử a[i].
+- Với mỗi a[i] ta sẽ xét từ 0 đến i-1:
+  - Nếu a[i] > a[j] và f[i] < f[j] + 1 thêm a[i] vào dãy con kết thúc tại a[j] nếu a[i] > a[j].
+- Duyệt f[], phần tử lớn nhất là độ dài dãy con tăng dài nhất.
+  
+  ```c++
+    #include<bits/stdc++.h>  
+    #define MAX 1001
+    using namespace std;     
+
+    int LIS( int A[], int n )  {  
+        int L[n];
+        L[0] = 1;    
+        for (int i = 1; i < n; i++ )  { 
+            L[i] = 1; 
+            for (int j = 0; j < i; j++ ) 
+                if ( A[i] > A[j] && L[i] < L[j] + 1)  
+                    L[i] = L[j] + 1;  
+        }   
+        return *max_element(L, L+n); 
+    }
+
+    int main()  {  
+        int A[MAX], n, T=1;
+        while(T--) {
+            cin>>n;
+            for(int i=0; i<n; i++) cin>>A[i];
+            cout<<LIS(A,n)<<endl;
         }
     }
-}
-```
-```
-import java.util.*;
+  ```
 
-public class Main {
-    public static void main(String[] args) {
-        List<String> danhSach = new ArrayList<>();
-        danhSach.add("Java");
-        danhSach.add("Python");
-        danhSach.add("C++");
+### Bài toán cái túi
 
-        // Sử dụng for-each loop để duyệt qua danh sách liên kết
-        for (String phanTu : danhSach) {
-            System.out.println(phanTu);
-        }
-    }
-}
-```
-Kết quả:
-```
-Java
-Python
-C++
-```
-- Sử dụng Iterable và Iterator giúp cho việc duyệt qua các phần tử trong tập hợp dễ dàng và trừu tượng hơn, giúp tăng tính linh hoạt và tái sử dụng trong việc xử lý dữ liệu trong Java.
-![](https://scaler.com/topics/images/iterators.webp)
-### 2. Interface Collection
-- Collection trong Java là một root interface trong hệ thống cấp bậc Collection. Java Collection cung cấp nhiều interface (Set, List, Queue, Deque vv) và các lớp (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet vv).
-![](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/03/collection-framework-hierarchy-in-java.jpg)
-#### List
-- Là một collection có thứ tự. List có thể chứa các phần tử trùng lặp. Thường có quyền kiểm soát chính xác vị trí các phần tử được chèn vào và có thể truy cập chúng bằng chỉ số (vị trí của chúng).
-- Các phương thức của interface List trong Java bao gồm add, addAll, get, set, remove, clear, contains, isEmpty, size, subList, ...
-- Các lớp cài đặt của List trong Java bao gồm
-  - ArrayList
-  - LinkedList
-  - Stack
-  - Vector.
-- Ví dụ:
-```
-import java.util.*;
+- Dùng mảng f[] lưu tổng giá trị lớn nhất mà tên trộm có thể lấy được khi chọn trong các món đồ từ 1 đến i và có khối lượng không vượt quá j. Kết quả của bài toán sẽ là f[m].
+- Duyệt đến đồ vật thứ i, và giới hạn trọng lượng hiện tại là j, ta sẽ xét:
+  - Chỉ xét đến khi mà j >= w[i]: Nếu vật thứ i được chọn vào phương án tối ưu, thì tải trọng còn lại có thể sử dụng là (j – w[i]) cho (i - 1) đồ vật phía trước, và ta được thêm giá trị là v[i] của vật thứ i.
+  - Nếu vật thứ i không được chọn vào phương án tối ưu thì kết quả tối ưu sẽ lấy của (i - 1) đồ vật trước đó với giới hạn trọng lượng là j.
+- Vậy ta sẽ có công thức quy hoạch động là:
+  - Nếu j < w[i] thì f[i][j] = f[i - 1][j].
+  - Nếu j >= w[i] thì f[i][j] = max (f[i - 1][j], f[i - 1][j - w[i]] + v[i]).
+  
+  ```c++
+    #include <bits/stdc++.h>
 
-public class Main {
-    public static void main(String[] args) {
-        List<String> list = new ArrayList<String>();
-        list.add("Cat");
-        list.add("Dog");
-        list.add(1, "Fish");
-        list.add("Dog");
-        System.out.println(list.size()); // 4
-        System.out.println(list); // [Cat, Fish, Dog, Dog]
-    }
-}
-```
-#### Set
-- Là một collection không thể chứa 2 giá trị trùng lặp.
-- Các lớp cài đặt của Set gồm:
-  - HashSet lưu trữ các phần tử của nó trong bảng băm, là cách thực hiện tốt nhất, tuy nhiên nó không đảm bảo về thứ tự các phần tử được chèn vào.
-  - TreeSet lưu trữ các phần tử của nó trong một cây, sắp xếp các phần tử của nó dựa trên các giá trị của chúng, về cơ bản là chậm hơn HashSet.
-  - LinkedHashSet được triển khai dưới dạng bảng băm với có cấu trúc dữ liệu danh sách liên kết, sắp xếp các phần tử của nó dựa trên thứ tự chúng được chèn vào tập hợp (thứ tự chèn).
-  - EnumSet là một cài đặt chuyên biệt để sử dụng với các kiểu enum.
-- Các phương thức: add, addAll, remove, clear, contains, isEmpty, size, ...
-- Ví dụ:
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        Set<String> set = new HashSet<>();
-        set.add("Dog");
-        set.add("Cat");
-        set.add("Fish");
-        set.add("Dog");
-        System.out.println(set.size()); // 3
-        System.out.println(set.contains("Fish")); // true
-        System.out.println(set); // [Cat, Fish, Dog]
-    }
-}
-```
-#### Queue
-- Trong hàng đợi (trong Queue), các phần tử được lưu trữ và truy cập theo cách nhập trước, xuất trước (FIFO - First In First Out)
-- Các lớp cài đặt của Queue bao gồm:
-  - ArrayDeque
-  - LinkedList
-  - PriorityQueue
-- Một số phương thức thường được sử dụng của Queue:
-  - add(): Chèn phần tử đã chỉ định vào hàng đợi.
-  - peek() - Trả về đầu của hàng đợi. Trả về null nếu hàng đợi trống.
-  - poll() - Trả về và loại bỏ phần đầu của hàng đợi
-## III. Interface Map, SortedMap
-### Map
-- Được sử dụng để lưu trữ và truy xuất dữ liệu theo cặp key và value. Mỗi cặp key và value được gọi là mục nhập (entry). Map trong java chỉ chứa các giá trị key duy nhất. Map rất hữu ích nếu bạn phải tìm kiếm, cập nhật hoặc xóa các phần tử trên dựa vào các key.
-- Các lớp cài đặt của Map:
-  - HashMap
-  - LinkedHashMap
-  - HashTable
-  - TreeMap
-- Một số phương thức: get(), put(), remove(), keySet(),...
-- Ví dụ:
-```
-public class MapExample {
-    public static void main(String args[]) {
-        // init map
-        Map<Integer, String> map = new HashMap<Integer, String>();
-        map.put(100, "A");
-        map.put(101, "B");
-        map.put(102, "C");
-        // show map
-        Set<Integer> set = map.keySet();
-        for (Integer key : set) {
-            System.out.println(key + " " + map.get(key));
-        }
-    }
-}
-```
-#### Hash Map
-- Lớp HashMap trong Java là một lớp triển khai của Map Interface trong Collections Framework nên nó sẽ có một vài đặc điểm và phương thức tương đồng với Map.
-- Một số đặc điểm:
-  - HashMap lưu trữ dữ liệu dưới dạng cặp key và value.
-  - Chứa các key duy nhất.
-  - Có thể có 1 key là null và nhiều giá trị null.
-Duy trì các phần tử KHÔNG theo thứ tự.
-### SortedMap và Tree Map
-- SortedMap: là một Map chứa các phần tử được sắp xếp theo thứ tự tăng dần của key của chúng. Các SortedMap được sử dụng cho các collection theo thứ tự tự nhiên của cặp key/value, chẳng hạn như từ điển và danh bạ điện thoại.
-- Lớp TreeMap: là một lớp triển khai của SortedMap, SortedMap kế thừa Map interface. Nên nó sẽ có một vài đặc điểm và phương thức tương đồng với Map và SortedMap.
-- Một số đặc điểm:
-  - TreeMap lưu trữ dữ liệu dưới dạng cặp key và value.
-  - Chứa các key duy nhất.
-  - KHÔNG cho phép bất kỳ key nào là null và nhưng có thể có nhiều giá trị null.
-  - Duy trì các phần tử được thêm vào theo thứ tự key tăng dần.
-## IV. Hàm sort
-> Lớp Collections trong java cung cấp các phương thức static để sắp xếp các phần tử của collection. Nếu các phần tử collection thuộc kiểu Set hoặc Map, chúng ta có thể sử dụng TreeSet hoặc TreeMap. Collections cung cấp phương thức sort() để phân sắp xếp các phần tử.
-- Phương thức Collections.sort(List): được sử dụng để sắp xếp các phần tử của List. Với điều kiện các phần tử của List phải là kiểu Comparable. Nghĩa là lớp các phần tử phải được implements giao diện Comparable
-  - Lớp String và các lớp Wrapper được implements giao diện Comparable => Có thể áp dụng phương thức Collections.sort(List list) mà không phải cài đặt gì thêm.
-  - Còn đối với List của các đối tượng do người dùng tự định nghĩa thì phải implements giao diện Comparable cho lớp của đối tượng đó.
-- Ví dụ:
-```
-public class Main {
-    public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(11);
-        list.add(5);
-        list.add(9);
-        list.add(22);
-        System.out.println(list); // [11, 5, 9, 22]
-        Collections.sort(list);
-        System.out.println(list); // [5, 9, 11, 22]
-    }
-}
-```
-- Đối với String và các lớp Wrapper, mặc định là sắp xếp tăng dần
-  - Sắp xếp giảm dần: Sử dụng phương thức `Collections.sort(list, new Comparator<T>())`
-- Ví dụ:
-```
-public class Main {
-    public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(10);
-        list.add(5);
-        list.add(9);
-        list.add(20);
-        System.out.println(list); // [10, 5, 9, 20]
-        Collections.sort(list, new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return o1 > o2 ? -1 : 0;
+    using namespace std;
+ 
+    int n,m,w[105],v[105],f[105];
+    int main()
+    {
+        cin >> n >> m;
+        for (int i=1;i<=n;i++) cin >> w[i] >> v[i];
+        for (int i=1;i<=n;i++)
+        {
+            for (int j=m;j>=1;j--)
+            {
+                if (j>=w[i]) f[j]=max(f[j],f[j-w[i]]+v[i]);
             }
-        });
-        System.out.println(list); // [5, 9, 10, 20]
-    }
-}
-```
-- Đối với các đối tượng người dùng tự định nghĩa: phải implements giao diện java.lang.Comparable để cài đặt phương thức compareTo()
-- Ví dụ:
-```
-public class SinhVien implements Comparable<SinhVien> {
-    private String name, msv;
-    private double gpa;
-
-    public SinhVien(String name, String msv, double gpa) {
-        this.name = name;
-        this.msv = msv;
-        this.gpa = gpa;
-    }
-
-    @Override
-    public int compareTo(SinhVien o) {
-        return this.getName().compareTo(o.getName());
-    }
-    //getter & setter
-}
-public class Main {
-    public static void main(String[] args) {
-        List<SinhVien> list = new ArrayList<>();
-        list.add(new SinhVien("AB", "001", 3.2));
-        list.add(new SinhVien("AAA", "003", 3.0));
-        list.add(new SinhVien("BCB", "002", 2.0));
-        Collections.sort(list);
-        for(SinhVien sinhVien : list){
-            System.out.println(sinhVien.getName()); // AAA AB BCB
         }
+        cout<<f[m];
     }
-}
-```
+  ```

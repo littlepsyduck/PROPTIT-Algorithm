@@ -2,6 +2,13 @@
 
 # CHIA ĐỂ TRỊ (DIVIDE AND CONQUER)
 
+```
+Nội dung:
+- Khái quát chung về ý tưởng thuật toán chia và trị.
+- Các bước thực hiện bài toán.
+- Mô phỏng nguyên lý hoạt động của thuật toán.
+```
+
 ## I. Khái quát chung về ý tưởng thuật toán chia và trị
 
 - Chia để trị là một mô hình thiết kế thuật toán quan trọng, hoạt động dựa trên ý tưởng chia vấn đề cần giải quyết thành các vấn đề con cùng dạng với vấn đề đã cho, chỉ khác là cỡ của chúng nhỏ hơn, cứ như vậy lặp lại nhiều lần, cho đến khi bài toán thu được đủ đơn giản để có thể giải quyết trực tiếp. Sau đó, lời giải của các bài toán nhỏ được tổng hợp lại thành lời giải cho bài toán ban đầu.

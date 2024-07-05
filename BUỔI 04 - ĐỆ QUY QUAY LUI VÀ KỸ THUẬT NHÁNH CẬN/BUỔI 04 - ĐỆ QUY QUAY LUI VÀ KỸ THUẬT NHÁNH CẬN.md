@@ -80,12 +80,12 @@
 
     ```c++
     void tim(int i){
-        for(Các giá trị j có thể gán cho x[i]){
+        for (Các giá trị j có thể gán cho x[i]){
             x[i]=j;
-            if(Việc thử trên vẫn còn hi vọng tìm ra cấu hình tốt hơn BESTCONFIG){ 
+            if (Việc thử trên vẫn còn hi vọng tìm ra cấu hình tốt hơn BESTCONFIG){ 
                 if (x[i] là phần tử cuối cùng)
                     Cập nhật lại BESTCONFIG
-                else{
+                else {
                     Ghi nhận việc thử x[i]=j nếu cần
                     tim(i+1);
                     Bỏ ghi nhận việc thử x[i]=j nếu cần

@@ -52,7 +52,6 @@ Nội dung:
           Liên thông yếu
         Code đếm thành phần liên thông
           Dùng BFS hoặc DFS
-
 ```
 
 ## I. Lý thuyết cơ bản về đồ thị

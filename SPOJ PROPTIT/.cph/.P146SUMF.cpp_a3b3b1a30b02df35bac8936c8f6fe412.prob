@@ -1,0 +1,1 @@
+{"name":"Local: P146SUMF","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P146SUMF.cpp","tests":[{"id":1681328669327,"input":"1\n10\n123456789\n3141592 ","output":"10\n9\n3\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P146SUMF.cpp","group":"local","local":true}

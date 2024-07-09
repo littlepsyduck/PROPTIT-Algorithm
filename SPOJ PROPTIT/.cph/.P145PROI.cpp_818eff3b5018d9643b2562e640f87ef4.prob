@@ -1,0 +1,1 @@
+{"name":"Local: P145PROI","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P145PROI.cpp","tests":[{"id":1682623006273,"input":"abc3456789PQ","output":"6"},{"id":1682623012698,"input":"abc123","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P145PROI.cpp","group":"local","local":true}

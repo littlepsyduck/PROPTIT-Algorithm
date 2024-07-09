@@ -1,0 +1,1 @@
+{"name":"Local: ENDCONTEST CPP","url":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\ENDCONTEST CPP.cpp","tests":[{"id":1679792935436,"input":"2\n123\n1234\n","output":"5\n7\n"},{"id":1679793027128,"input":"1\n134","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\ENDCONTEST CPP.cpp","group":"local","local":true}

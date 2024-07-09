@@ -1,0 +1,1 @@
+{"name":"Local: P166SUMA","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P166SUMA.cpp","tests":[{"id":1682137388693,"input":"5\n4 5 4 4 1","output":"2"},{"id":1682137395983,"input":"2\n1 1","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P166SUMA.cpp","group":"local","local":true}

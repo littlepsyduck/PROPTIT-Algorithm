@@ -1,0 +1,1 @@
+{"name":"Local: P172SUMI","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P172SUMI.cpp","tests":[{"id":1681550989956,"input":"1\n1","output":"1"},{"id":1681551000709,"input":"1\n2","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P172SUMI.cpp","group":"local","local":true}

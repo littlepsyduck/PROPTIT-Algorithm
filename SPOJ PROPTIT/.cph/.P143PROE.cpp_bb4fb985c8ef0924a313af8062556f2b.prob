@@ -1,0 +1,1 @@
+{"name":"Local: P143PROE","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P143PROE.cpp","tests":[{"id":1682621740928,"input":"ababba","output":"bbba"},{"id":1682621750899,"input":"abbcbccacbbcbaaba","output":"cccccbba"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P143PROE.cpp","group":"local","local":true}

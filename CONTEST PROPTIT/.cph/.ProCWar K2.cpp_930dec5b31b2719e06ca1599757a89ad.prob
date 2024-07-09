@@ -1,0 +1,1 @@
+{"name":"Local: ProCWar K2","url":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\ProCWar K2.cpp","tests":[{"id":1686590371000,"input":"DECFC\n2 9 5 5\n8 7 3 10\n63","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\ProCWar K2.cpp","group":"local","local":true}

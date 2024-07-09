@@ -1,0 +1,1 @@
+{"name":"Local: KPLANK","url":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\KPLANK.cpp","tests":[{"id":1691523090625,"input":"7\n5 2 4 3 3 1 4","output":"9"},{"id":1691594642187,"input":"7\n7 6 5 4 3 2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\KPLANK.cpp","group":"local","local":true}

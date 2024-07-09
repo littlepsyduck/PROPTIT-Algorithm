@@ -1,0 +1,1 @@
+{"name":"Local: PTIT138A","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\PTIT138A.cpp","tests":[{"id":1679934356623,"input":"6 8 10\n25 52 60\n5 12 13\n0 0 0","output":"right\nwrong\nright"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\PTIT138A.cpp","group":"local","local":true}

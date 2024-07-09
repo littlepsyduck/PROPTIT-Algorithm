@@ -1,0 +1,1 @@
+{"name":"Local: PTIT137H","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\PTIT137H.cpp","tests":[{"id":1681751202944,"input":"1v3\n\n2P6\n\nIsThisDivisible\n\nend","output":"yes\nno\nno"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\PTIT137H.cpp","group":"local","local":true}

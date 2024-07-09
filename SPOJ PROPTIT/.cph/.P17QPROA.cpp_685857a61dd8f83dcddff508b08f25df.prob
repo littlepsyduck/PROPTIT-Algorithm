@@ -1,0 +1,1 @@
+{"name":"Local: P17QPROA","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P17QPROA.cpp","tests":[{"id":1682739720357,"input":"5\n10\n25\n3\n0\n1","output":"1\n2\n0\n1\n1 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P17QPROA.cpp","group":"local","local":true}

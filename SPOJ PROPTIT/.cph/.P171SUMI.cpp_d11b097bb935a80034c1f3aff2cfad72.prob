@@ -1,0 +1,1 @@
+{"name":"Local: P171SUMI","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P171SUMI.cpp","tests":[{"id":1681550846300,"input":"3\nabc\nccaa\nabcd","output":"YES\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P171SUMI.cpp","group":"local","local":true}

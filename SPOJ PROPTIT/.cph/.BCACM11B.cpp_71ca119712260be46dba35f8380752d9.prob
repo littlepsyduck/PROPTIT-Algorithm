@@ -1,0 +1,1 @@
+{"name":"Local: BCACM11B","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCACM11B.cpp","tests":[{"id":1680015541002,"input":"2\n5 2 3\n4 1 2","output":"18\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCACM11B.cpp","group":"local","local":true}

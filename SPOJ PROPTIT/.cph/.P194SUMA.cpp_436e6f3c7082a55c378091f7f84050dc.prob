@@ -1,0 +1,1 @@
+{"name":"Local: P194SUMA","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P194SUMA.cpp","tests":[{"id":1681580803720,"input":"3   1\n\n\n4   6 2","output":"8"},{"id":1681580809405,"input":"5   2\n\n\n1   7 -4 2 -3","output":"17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P194SUMA.cpp","group":"local","local":true}

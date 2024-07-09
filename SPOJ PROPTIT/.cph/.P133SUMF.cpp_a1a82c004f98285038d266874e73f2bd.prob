@@ -1,0 +1,1 @@
+{"name":"Local: P133SUMF","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P133SUMF.cpp","tests":[{"id":1679941482265,"input":"4 6 8","output":"10"},{"id":1679941793965,"input":"10 1 4","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P133SUMF.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: P205PROD","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P205PROD.cpp","tests":[{"id":1681918196577,"input":"2\n\n4\n\n16 7 2000 4\n\n4\n\n15 15 15 15","output":"1\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P205PROD.cpp","group":"local","local":true}

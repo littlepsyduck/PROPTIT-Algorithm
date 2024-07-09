@@ -1,0 +1,1 @@
+{"name":"Local: P141SUME","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P141SUME.cpp","tests":[{"id":1682617764001,"input":"5\n3 1 2 5 1","output":"/\\     \n  /\\/  \\    \n /      \\   \n/        \\  \n          \\/"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P141SUME.cpp","group":"local","local":true}

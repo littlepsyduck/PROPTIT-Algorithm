@@ -1,0 +1,1 @@
+{"name":"Local: BCTELEPH","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCTELEPH.cpp","tests":[{"id":1682445018343,"input":"2\n\n3\n\n911\n\n97625999\n\n91125426\n\n5\n\n113\n\n12340\n\n123440\n\n12345\n\n98346","output":"NO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCTELEPH.cpp","group":"local","local":true}

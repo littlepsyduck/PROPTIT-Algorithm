@@ -1,0 +1,1 @@
+{"name":"Local: ProCWar J1","url":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\ProCWar J1.cpp","tests":[{"id":1686504627388,"input":"5 77","output":"1 2 3 4 5 \n16 17 18 19 6 \n15 24 25 20 7 \n14 23 22 21 8 \n13 12 11 10 9 \n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\ProCWar J1.cpp","group":"local","local":true}

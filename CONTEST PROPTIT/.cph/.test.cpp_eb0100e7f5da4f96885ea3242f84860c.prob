@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\test.cpp","tests":[{"id":1692932337076,"input":"5 5\n1 2 3 4 6\n","output":""},{"id":1692932401387,"input":"2\n4 3\n1 10 4 2\n3 5\n2 3 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\PROPTIT\\test.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: P132SUMD","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P132SUMD.cpp","tests":[{"id":1680464483153,"input":"5 3 8","output":"5+3=8"},{"id":1680464565284,"input":"5 15 3","output":"5=15/3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P132SUMD.cpp","group":"local","local":true}

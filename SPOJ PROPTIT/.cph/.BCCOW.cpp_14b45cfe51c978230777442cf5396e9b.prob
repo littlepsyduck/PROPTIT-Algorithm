@@ -1,0 +1,1 @@
+{"name":"Local: BCCOW","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCCOW.cpp","tests":[{"id":1679939057047,"input":"259 5\n\n81\n\n58\n\n42\n\n33\n\n61","output":"242"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCCOW.cpp","group":"local","local":true}

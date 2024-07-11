@@ -1,1 +1,0 @@
-{"name":"Local: P178PROA","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P178PROA.cpp","tests":[{"id":1682069550751,"input":"10000\n50000\n2000000\n7500000","output":"10000\n50000\n1800000\n6000000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P178PROA.cpp","group":"local","local":true}

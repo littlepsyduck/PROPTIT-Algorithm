@@ -1,1 +1,0 @@
-{"name":"Local: PTIT126E","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\PTIT126E.cpp","tests":[{"id":1679940252600,"input":"YNNAPYYNY\nYAYAYAYA\nPYPPNNYA\nYNNAA\nNYAAA\n#","output":"yes\nneed quorum\ntie\nno\nneed quorum"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\PTIT126E.cpp","group":"local","local":true}

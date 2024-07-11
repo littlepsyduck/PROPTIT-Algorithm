@@ -1,1 +1,0 @@
-{"name":"Local: P201PROJ","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P201PROJ.cpp","tests":[{"id":1681924558730,"input":"3\n\n1 11\n\n4 2\n\n191 31415926","output":"1\n0\n1337"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P201PROJ.cpp","group":"local","local":true}

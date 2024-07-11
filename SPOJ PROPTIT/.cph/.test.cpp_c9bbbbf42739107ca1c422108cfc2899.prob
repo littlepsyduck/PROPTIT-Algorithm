@@ -1,1 +1,0 @@
-{"name":"Local: test","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\test.cpp","tests":[{"id":1679928997700,"input":"2 4\n6 9\n0 0","output":"2 4\n3 18"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\test.cpp","group":"local","local":true}

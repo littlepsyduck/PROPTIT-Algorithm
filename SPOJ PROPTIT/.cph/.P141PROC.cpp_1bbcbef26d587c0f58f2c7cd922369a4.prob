@@ -1,1 +1,0 @@
-{"name":"Local: P141PROC","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P141PROC.cpp","tests":[{"id":1680465869682,"input":"3\nX++\n--X\nX++","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P141PROC.cpp","group":"local","local":true}

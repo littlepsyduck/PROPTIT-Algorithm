@@ -1,1 +1,0 @@
-{"name":"Local: P173PROG","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P173PROG.cpp","tests":[{"id":1681552431938,"input":"4\nccd\ntv\nwolf\nfnf","output":"cdc\nvt\nBIGGEST\nnff"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P173PROG.cpp","group":"local","local":true}

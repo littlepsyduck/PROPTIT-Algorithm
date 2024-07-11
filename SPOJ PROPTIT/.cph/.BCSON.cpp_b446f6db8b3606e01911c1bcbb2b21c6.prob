@@ -1,1 +1,0 @@
-{"name":"Local: BCSON","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCSON.cpp","tests":[{"id":1680665891888,"input":"2 3\n\n4 3 4\n\n1 2 1","output":"42"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCSON.cpp","group":"local","local":true}

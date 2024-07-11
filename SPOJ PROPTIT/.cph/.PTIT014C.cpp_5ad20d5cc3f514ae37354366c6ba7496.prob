@@ -1,1 +1,0 @@
-{"name":"Local: PTIT014C","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\PTIT014C.cpp","tests":[{"id":1681588350460,"input":"2\n2\nALICE\nBOB\n2\nABCB\nBCAB","output":"0\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\PTIT014C.cpp","group":"local","local":true}

@@ -1,1 +1,0 @@
-{"name":"Local: BCGRASS","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCGRASS.cpp","tests":[{"id":1680341753273,"input":"5 6\n.#....\n..#...\n..#..#\n...##.\n.#....","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCGRASS.cpp","group":"local","local":true}

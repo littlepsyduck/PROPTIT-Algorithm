@@ -1,1 +1,0 @@
-{"name":"Local: P157PROA","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P157PROA.cpp","tests":[{"id":1681444945112,"input":"3\n\n3\n\n42\n\n42\n\n19\n\n4\n\n7\n\n99\n\n99\n\n7\n\n5\n\n11\n\n12\n\n13\n\n14\n\n15","output":"42\n7\n11"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P157PROA.cpp","group":"local","local":true}

@@ -1,1 +1,0 @@
-{"name":"Local: P143PROC","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P143PROC.cpp","tests":[{"id":1679994875422,"input":"10 1 10","output":"-1"},{"id":1679994885590,"input":"10 6 40","output":"2 8 14 20 26"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P143PROC.cpp","group":"local","local":true}

@@ -1,1 +1,0 @@
-{"name":"Local: P185SUME","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P185SUME.cpp","tests":[{"id":1682841011656,"input":"5\n1 3 3 2 1","output":"YES"},{"id":1682841122185,"input":"5\n1 2 3 4 5","output":"NO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P185SUME.cpp","group":"local","local":true}

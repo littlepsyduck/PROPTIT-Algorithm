@@ -1,1 +1,0 @@
-{"name":"Local: VLPT12G","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\VLPT12G.cpp","tests":[{"id":1680970148145,"input":"15 17\n14 16\n1 20\n0 0","output":"Case 1: 1\nCase 2: 0\nCase 3: 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\VLPT12G.cpp","group":"local","local":true}

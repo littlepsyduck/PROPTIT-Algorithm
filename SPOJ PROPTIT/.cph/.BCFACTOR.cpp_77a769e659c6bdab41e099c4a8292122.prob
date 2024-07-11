@@ -1,1 +1,0 @@
-{"name":"Local: BCFACTOR","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCFACTOR.cpp","tests":[{"id":1679945513727,"input":"4","output":"2 2"},{"id":1679945520604,"input":"168","output":"2 3\n\n3 1\n\n7 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\BCFACTOR.cpp","group":"local","local":true}

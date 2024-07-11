@@ -1,1 +1,0 @@
-{"name":"Local: P204PROD","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P204PROD.cpp","tests":[{"id":1681918802618,"input":"5\n\n2\n\n2 3\n\n4\n\n2 2 8 8\n\n3\n\n3 3 3\n\n4\n\n5 5 5 5\n\n4\n\n1 1 1 1","output":"YES\nNO\nYES\nNO\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P204PROD.cpp","group":"local","local":true}

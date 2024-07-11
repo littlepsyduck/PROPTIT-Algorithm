@@ -1,1 +1,0 @@
-{"name":"Local: P181PROA","url":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P181PROA.cpp","tests":[{"id":1682781253061,"input":"5  \n1 0 1 5 1","output":"yes"},{"id":1682781264833,"input":"4  \n3 9 9 3 ","output":"no"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OneDrive\\Documents\\C++\\SPOJ\\P181PROA.cpp","group":"local","local":true}
